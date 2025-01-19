@@ -1,5 +1,3 @@
-
-
 #[tokio::test]
 async fn health_check_works() {
     spawn_app();
@@ -15,7 +13,7 @@ async fn health_check_works() {
     assert_eq!(Some(0), response.content_length());
 }
 
-fn spawn_app(){
+fn spawn_app() {
     let server = zero2prod::run().expect("failed to start server");
 
     let _ = tokio::spawn(server);

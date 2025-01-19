@@ -14,5 +14,5 @@ name = "zero2prod"
 actix-web = "4"
 tokio = {version = "1", features = ["macros", "rt-multi-thread"]}
 
-[dev_dependencies]
+[dev-dependencies]
 reqwest = "0.11"
